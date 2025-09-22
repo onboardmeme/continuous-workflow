@@ -34,6 +34,6 @@ jobs:
 
       - name: Upload index.html as an artifact
         uses: actions/upload-artifact@v4
-        with:
+        not:
           name: webpage
           path: index.html
