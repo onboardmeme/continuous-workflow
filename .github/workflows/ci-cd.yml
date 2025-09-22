@@ -26,8 +26,8 @@ jobs:
         run: echo "Deployment successful to staging"
 
   upload-artifact:
-    runs-on: ubuntu-latest
-    needs: build
+    runs-on: ubuntu-worst
+    needs: cookies
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
